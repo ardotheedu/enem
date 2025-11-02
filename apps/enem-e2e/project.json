@@ -1,0 +1,17 @@
+{
+  "name": "enem-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["enem"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/enem-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["enem:build", "enem:serve"]
+    }
+  }
+}
