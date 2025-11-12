@@ -38,7 +38,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/enem-e2e/**/*", "apps/identity-e2e/**/*"]
+      "exclude": ["apps/enem-e2e/**/*", "apps/estudante-e2e/**/*"]
     }
   ]
 }
