@@ -14,5 +14,5 @@ export default {
     ],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/identity-e2e',
+  coverageDirectory: '../../coverage/estudante-e2e',
 };
