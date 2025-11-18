@@ -3,7 +3,7 @@ Aplicação para alunos resolverem exercicios do enem para treinar
 
 ## RFs (Requisitos funcionais)
 
-- [ ] Deve ser possivel cadastrar
+- [ x ] Deve ser possivel cadastrar
 - [ ] Deve ser possivel se autenticar
 - [ ] Deve ser possivel obter o perfil de u usuário logado
 - [ ] Deve ser possivel acessar questões por materia
