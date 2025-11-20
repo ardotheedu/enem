@@ -10,7 +10,19 @@
 
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/3gvLZIUJYc)
 
+## Steps
 
+yarn
+
+# generate rsa public an private key
+- Windows
+# Generate 2048-bit private key
+openssl genpkey -algorithm RSA -out private.pem -pkeyopt rsa_keygen_bits:2048
+
+# Extract public key
+openssl rsa -in private.pem -pubout -out public.pem
+
+# Convert both private and public to base 64
 ## Run tasks
 
 To run the dev server for your app, use:
