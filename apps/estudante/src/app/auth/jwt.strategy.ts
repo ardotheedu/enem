@@ -9,7 +9,7 @@ const tokenSchema = z.object({
 	sub: z.uuid(),
 });
 
-type TokenSchema = z.infer<typeof tokenSchema>;
+export type TokenSchema = z.infer<typeof tokenSchema>;
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
@@ -18,7 +18,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
 		super({
 			jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-			secretOrKey: publicKey,
+			secretOrKey: Buffer.from(publicKey, 'base64').toString('utf-8'),
 			algorithms: ['RS256'],
 		});
   	}
