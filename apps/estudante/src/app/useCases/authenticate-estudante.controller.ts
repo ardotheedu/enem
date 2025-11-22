@@ -22,6 +22,7 @@ export class AuthenticateEstudanteController {
         private db: PostgresJsDatabase<typeof sc>,
         private jwt: JwtService,
     ) {}
+	@Post()
     @UsePipes(new ZodValidationPipe(createSessionBodySchema))
     async handle(@Body() body: CreateSessionBodySchema) {
         const { email, password } = body;

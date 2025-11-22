@@ -5,7 +5,7 @@ Aplicação para alunos resolverem exercicios do enem para treinar
 
 - [ x ] Deve ser possivel cadastrar
 - [ x ] Deve ser possivel se autenticar
-- [ ] Deve ser possivel obter o perfil de u usuário logado
+- [ x ] Deve ser possivel obter o perfil de um usuário logado
 - [ ] Deve ser possivel acessar questões por materia
 - [ ] Deve ser possivel fazer questões estilos enem
 - [ ] Deve ser possivel visualizar pontuação total

@@ -4,14 +4,15 @@ import { DrizzleAsyncProvider, drizzleProvider } from './drizzle/drizzle.provide
 import { CreateEstudanteController } from './useCases/create-estudante.controller';
 import { envSchema } from './env';
 import { AuthModule } from './auth/auth.module';
-import { AuthenticateEstudanteController } from './useCases/authenticate-estudante-controler';
+import { AuthenticateEstudanteController } from './useCases/authenticate-estudante.controller';
+import { GetEstudanteController } from './useCases/get-user.controller';
 
 @Module({
   imports: [ConfigModule.forRoot({
     validate: env => envSchema.parse(env),
     isGlobal: true,
   }), AuthModule],
-  controllers: [CreateEstudanteController, AuthenticateEstudanteController],
+  controllers: [CreateEstudanteController, AuthenticateEstudanteController, GetEstudanteController],
   providers: [...drizzleProvider],
   exports: [DrizzleAsyncProvider],
 })
