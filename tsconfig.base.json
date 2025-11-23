@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@enem/auth": ["auth/src/index.ts"]
+      "@enem/auth": ["auth/src/index.ts"],
+      "@enem/common": ["common/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

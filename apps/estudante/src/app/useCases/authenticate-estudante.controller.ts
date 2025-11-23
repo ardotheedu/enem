@@ -5,7 +5,7 @@ import { DrizzleAsyncProvider } from "../drizzle/drizzle.provider";
 import { eq } from "drizzle-orm";
 import {compare} from "bcryptjs";
 import z from "zod";
-import { ZodValidationPipe } from "../pipes/zod-validation-pipe";
+import { ZodValidationPipe } from "@enem/common";
 import { JwtService } from "@nestjs/jwt";
 
 const createSessionBodySchema = z.object({
