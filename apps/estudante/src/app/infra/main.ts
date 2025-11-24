@@ -5,9 +5,10 @@
 
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app/app.module';
 import { ConfigService } from '@nestjs/config';
-import { Env } from './app/env';
+import { Env } from './env';
+import { AppModule } from './app.module';
+
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

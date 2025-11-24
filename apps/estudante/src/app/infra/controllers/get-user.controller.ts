@@ -1,11 +1,8 @@
 import { Body, ConflictException, Controller, Get, Inject, Post, UnauthorizedException, UseGuards, UsePipes } from "@nestjs/common";
 import { PostgresJsDatabase } from "drizzle-orm/postgres-js";
-import * as sc from '../../db/schema';
-import { DrizzleAsyncProvider } from "../drizzle/drizzle.provider";
+import * as sc from '../database/db/schema';
+import { DrizzleAsyncProvider } from "../database/drizzle/drizzle.provider";
 import { eq } from "drizzle-orm";
-import {compare} from "bcryptjs";
-import z from "zod";
-import { ZodValidationPipe } from "@enem/common";
 import { JwtService } from "@nestjs/jwt";
 import { JwtAuthGuard, TokenSchema, CurrentUser } from "@enem/auth";
 
