@@ -10,6 +10,8 @@
 
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/3gvLZIUJYc)
 
+## Faça as migrações
+
 ## Steps
 
 yarn
